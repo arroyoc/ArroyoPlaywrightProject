@@ -24,6 +24,10 @@ public class LoginPage {
         this.errorTxt = page.locator("#error");
     }
 
+    public void navigateToLoginPage(){
+        page.navigate("https://practicetestautomation.com/practice-test-login/");
+    }
+
     public LoginPage enterUsername(String userName){
         emailField.fill(userName);
         return this;
